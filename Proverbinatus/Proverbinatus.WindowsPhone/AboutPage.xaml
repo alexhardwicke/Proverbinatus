@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="Proverbinatus.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Proverbinatus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot>
+            <PivotItem Header="about">
+                <StackPanel>
+                    <TextBlock Padding="0,0,0,16" FontSize="18" TextWrapping="WrapWholeWords" Foreground="{ThemeResource ApplicationForegroundThemeBrush}">
+                        Proverbinatus was inspired in no small part by <Hyperlink NavigateUri="http://www.proverbinatus.com">www.proverbinatus.com</Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="open source">
+                <StackPanel>
+                    <TextBlock Padding="0,0,0,16" FontSize="18" TextWrapping="WrapWholeWords">
+                        Proverbinatus uses Json.NET by James Newton-King.
+                    </TextBlock>
+                    <TextBlock FontSize="18" TextWrapping="WrapWholeWords">
+                        <Hyperlink NavigateUri="http://james.newtonking.com/json">http://james.newtonking.com/json</Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
